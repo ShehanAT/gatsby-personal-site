@@ -1,0 +1,17 @@
+html {
+    background-color: lavenderblush;
+  }
+
+  body{
+    .card-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .card-container {
+        width: 49%;
+        
+    }
+  }

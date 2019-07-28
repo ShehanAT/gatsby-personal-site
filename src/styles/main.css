@@ -1,17 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Crushed");
+
 html {
     background-color: lavenderblush;
+    font-size: 62.5%;/* 62.5% = 1rem    */
   }
 
-  body{
-    .card-container {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        width: 100%;
-    }
 
-    .card-container {
-        width: 49%;
-        
-    }
+  /*
+--------------------------------------
+About Section
+--------------------------------------
+  */
+  .about__heading{
+    text-align:center;
   }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+  }
+  .header__container {
+    display: inline;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .card {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    display: flex;
+    padding: 0;
+    flex: 1 0 0;
+  }
+  .col{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+      align-items: center;
+
+  }
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+}
+#profilePic{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  display: block;
+  margin: 0 auto;
+  /* 0 is for top and bottom, auto is for left and right  */
+}

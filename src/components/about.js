@@ -8,12 +8,12 @@ import TreehouseLogo from "../images/TreehouseLogo.png";
 import freeCodeCampLogo from "../images/freeCodeCampLogo.jpg";
 import profilePic from "../images/profilePic.png";
 const About = ({ siteTitle}) => ( 
-              <div className="about">
+              <div className="about" id="about">
                 <div className="about__heading">
                     <h2 >About me</h2>
                 </div>
                 
-                <div className="about__main container">
+                <div className="about__main about-container">
                     <div className="card ">
                         Name:Shehan Atuk<br></br>
                         Education: Computer Science @ University of Windsor<br></br>
@@ -32,7 +32,7 @@ const About = ({ siteTitle}) => (
 
                   
                 </div>
-                <div className="container">
+                <div className="about__main about-container">
                   {/* <div>Hello, I'm Shehan. I started learning about web development in
                       2016 and ever since then I have fallen in love with it. I
                       Specialize in React.js, Node.js and Angular.js </div>
@@ -75,8 +75,8 @@ const About = ({ siteTitle}) => (
                       <div className="col card">
                           <h3>Courses</h3>
                           <span>
-                          <a href="https://www.credential.net/667byw7n"><img src={TreehouseLogo} alt="TeamTreehouse Logo"/></a>
-                          <a href="https://www.freecodecamp.org/shehanat/front-end-certification"><img src={freeCodeCampLogo} alt="FreeCodeCamp Logo"/></a>
+                          <a href="https://www.credential.net/667byw7n"><img src={TreehouseLogo} class="course__image" alt="TeamTreehouse Logo"/></a>
+                          <a href="https://www.freecodecamp.org/shehanat/front-end-certification"><img src={freeCodeCampLogo} class="course__image" alt="FreeCodeCamp Logo"/></a>
                           </span>
                       </div>
               </div>

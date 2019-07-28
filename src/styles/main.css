@@ -14,9 +14,10 @@ About Section
   .about__heading{
     text-align:center;
   }
-  .container {
+  .about-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 20px;
     align-items: center;
     margin: 0px 0px 0px 0px;
   }
@@ -45,11 +46,12 @@ About Section
     height: 3rem;
   }
 
-img {
+.course__image {
     width: 3rem;
     height: 3rem;
     border-radius: 1rem;
 }
+
 #profilePic{
   width: 6rem;
   height: 6rem;
@@ -58,3 +60,47 @@ img {
   margin: 0 auto;
   /* 0 is for top and bottom, auto is for left and right  */
 }
+
+  /*
+--------------------------------------
+Project Section
+--------------------------------------
+  */
+
+  .project__main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+  }
+  .project--card{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    display: block;
+    padding: 0;
+    flex: 1 0 0;
+  }
+  .project--card--heading{
+    text-align: center;
+  }
+  .project__heading{
+    text-align: center;
+  }
+  .project__image{
+    width: 20rem;
+    height: 14rem;
+   
+  }
+
+
+
+ /*
+--------------------------------------
+Footer Section
+--------------------------------------
+  */
+
+  footer{
+    text-align: center;
+  }
+

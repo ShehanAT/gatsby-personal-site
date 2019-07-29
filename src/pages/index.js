@@ -9,6 +9,7 @@ import Header from "../components/header";
 import Project from "../components/project";
 const IndexPage = () => (
   <Layout>
+    <Header />
     <About />
     <Project />
   </Layout>

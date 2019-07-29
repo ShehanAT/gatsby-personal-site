@@ -1,23 +1,25 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import homeIcon from "../images/html-coding.png";
 const Navbar = ({ }) => (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav mr-auto">
-      <li className="nav-item active">
-        <a className="nav-link" href="#home">Home <span className="sr-only">(current)</span></a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#about">About</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#project">Projects</a>
-      </li>
-     
-    </ul>
-  </div>
-</nav>
+    <a className="navbar-brand" href="#"><img src={homeIcon} alt="picture of html tag" id="homeIcon"/></a>
+    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+  
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav mr-auto">
+        <li className="nav-item active">
+          <a className="nav-link" href="#about">About</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#project">Project</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 )
 
 export default Navbar 

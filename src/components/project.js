@@ -14,7 +14,7 @@ const Project = ({ siteTitle }) => (
         <div className="project--card">
             <a href="http://159.89.116.234:8080/">
             <div className="project--card--heading">
-            <img src={reactImageGallery} class="project__image"  alt="picture of my React Image Gallery project"/>
+            <img src={reactImageGallery} className="project__image"  alt="picture of my React Image Gallery project"/>
                 <h4>React Image Gallery</h4>
             </div>
             <p>
@@ -27,7 +27,7 @@ const Project = ({ siteTitle }) => (
         <div className="project--card">
         <a href="https://fathomless-refuge-88305.herokuapp.com/">
             <div className="project--card--heading">
-                <img src={ocrCapstone} class="project__image"  alt="picture of my OCR Capstone project"/>
+                <img src={ocrCapstone} className="project__image"  alt="picture of my OCR Capstone project"/>
                 <h4>OCR with Flickr</h4>
             </div>
         <p>
@@ -40,7 +40,7 @@ const Project = ({ siteTitle }) => (
         <div className="project--card">
           <a href="https://agile-thicket-44316.herokuapp.com/">
             <div className="project--card--heading">
-                <img src={twitterPic} class="project__image"  alt="picture of my Twitter Interface project"/>
+                <img src={twitterPic} className="project__image"  alt="picture of my Twitter Interface project"/>
                 <h4>Twitter Interface</h4>
             </div>
             <p>
@@ -52,7 +52,7 @@ const Project = ({ siteTitle }) => (
         </div>
         <div className="project--card">
             <div className="project--card--heading">
-                <img src={libraryManager} class="project__image" alt="picture of my Library Manager project"/>
+                <img src={libraryManager} className="project__image" alt="picture of my Library Manager project"/>
                 <h4>Library Manager</h4>
             </div>
             <p>Libary Management System build using PHP, MySQL and Javascript.

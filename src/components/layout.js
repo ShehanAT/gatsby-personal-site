@@ -27,7 +27,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar  />
-      <Header  />
       <div
         style={{
           margin: `0 auto`,

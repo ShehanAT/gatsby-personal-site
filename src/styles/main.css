@@ -47,6 +47,9 @@ Header Section
 About Section
 --------------------------------------
   */
+  .about {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+  }
   .about__heading{
     text-align:center;
   }
@@ -65,11 +68,10 @@ About Section
     
   } */
 
-  .card {
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    display: flex;
+  .custom__card {
+    display: block;
     padding: 0;
-    flex: 1 0 0;
+    text-align: center;
   }
   .col{
       display: grid;
@@ -107,7 +109,6 @@ Project Section + Media Queries
  
   .project__main{
     display: grid;
-    /* grid-template-columns: 1fr; */
     grid-gap: 20px;
     align-items: center;
     margin: 0px 0px 0px 0px;
@@ -131,7 +132,6 @@ Project Section + Media Queries
 @media (max-width: 900px) and (min-width: 600px){
   .project__main{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
     align-items: center;
     margin: 0px 0px 0px 0px;
@@ -140,7 +140,10 @@ Project Section + Media Queries
     border: 1px solid rgba(0, 0, 0, 0.8);
     display: block;
     padding: 0;
-    flex: 1 0 0;
+  }
+  .project--card p {
+    margin-left: 25%;
+    margin-right: 25%;
   }
   .header__container {
     display: grid;
@@ -156,7 +159,6 @@ Project Section + Media Queries
 @media (max-width: 1200px) and (min-width: 900px){
   .project__main{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 20px;
     align-items: center;
     margin: 0px 0px 0px 0px;
@@ -165,7 +167,10 @@ Project Section + Media Queries
     border: 1px solid rgba(0, 0, 0, 0.8);
     display: block;
     padding: 0;
-    flex: 1 0 0;
+  }
+  .project--card p {
+    margin-left: 25%;
+    margin-right: 25%;
   }
   .header__container {
     display: grid;
@@ -196,9 +201,11 @@ Project Section + Media Queries
     border: 1px solid rgba(0, 0, 0, 0.8);
     display: block;
     padding: 0;
-    flex: 1 0 0;
   }
-  
+  .project--card p {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
   .header__container {
     display: grid;
     

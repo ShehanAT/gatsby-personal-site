@@ -1,9 +1,40 @@
+
+ /*
+--------------------------------------
+General Styles
+--------------------------------------
+  */
 @import url("https://fonts.googleapis.com/css?family=Crushed");
 
 html {
     background-color: lavenderblush;
     font-size: 62.5%;/* 62.5% = 1rem    */
   }
+
+ /*
+--------------------------------------
+Header Section
+--------------------------------------
+  */
+
+/* .header__container {
+  display: grid;
+  background-color: green;
+  grid-template-columns: 100%;
+} */
+.header__container {
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: center;
+
+  margin: 0px auto;
+  max-width: 960px;
+
+  padding: 0px 0rem 1.45rem 1.0875rem;
+   /*padding: top right bottom left */
+}
+
+
 
 
   /*
@@ -21,13 +52,13 @@ About Section
     align-items: center;
     margin: 0px 0px 0px 0px;
   }
-  .header__container {
+  /* .header__container {
     display: inline;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     align-items: center;
     margin: 0px 0px 0px 0px;
-    text-align: center;
-  }
+    
+  } */
 
   .card {
     border: 1px solid rgba(0, 0, 0, 0.8);
@@ -63,7 +94,7 @@ About Section
 
   /*
 --------------------------------------
-Project Section
+Project Section + Media Queries
 --------------------------------------
   */
 @media (max-width: 600px){
@@ -79,8 +110,13 @@ Project Section
     border: 1px solid rgba(0, 0, 0, 0.8);
     display: block;
     padding: 0;
-
-
+  }
+  .header__container {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 1.0875rem 1.45rem 1.0875rem;
   }
 }
 @media (max-width: 900px) and (min-width: 600px){
@@ -97,6 +133,13 @@ Project Section
     padding: 0;
     flex: 1 0 0;
   }
+  .header__container {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 1.0875rem 1.45rem 1.0875rem;
+  }
 }
 @media (max-width: 1200px) and (min-width: 900px){
   .project__main{
@@ -111,6 +154,16 @@ Project Section
     display: block;
     padding: 0;
     flex: 1 0 0;
+  }
+  .header__container {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+
+    margin: 0px auto;
+    max-width: 960px;
+    padding: 0px 1.0875rem 1.45rem 1.0875rem;
+    
   }
 }
 @media(min-width: 1200px){
@@ -134,6 +187,17 @@ Project Section
     padding: 0;
     flex: 1 0 0;
   }
+  /* .header__container {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+
+    margin: 0px auto;
+    max-width: 960px;
+    padding: 0px 1.0875rem 1.45rem 1.0875rem;
+     /*padding: top right bottom left 
+  } */
+  
 }
 
   .project--card--heading{

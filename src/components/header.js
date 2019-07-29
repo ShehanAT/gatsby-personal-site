@@ -5,39 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
 import profilePic from "../images/profilePic.png";
 const Header = ({ siteTitle }) => (
-  <header 
-  className="header" 
-  id="home"
-  style={{
-        background: `rebeccapurple`,
-        marginBottom: `1.45rem`,
-      }}
-  >
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav mr-auto">
-      <li className="nav-item active">
-        <a className="nav-link" href="#home">Home <span className="sr-only">(current)</span></a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#about">About</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#project">Projects</a>
-      </li>
-     
-    </ul>
-  </div>
-</nav>
   
-  {/* <div 
-  className="banner row"
-  style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
-        }}
-  > */}
     <div className="header__container">
       <div className="card">
         <img src={profilePic} id="profilePic" alt="image of me"/>
@@ -50,15 +18,7 @@ const Header = ({ siteTitle }) => (
 
 
 
-</header>
+
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

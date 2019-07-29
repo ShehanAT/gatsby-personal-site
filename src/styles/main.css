@@ -36,7 +36,7 @@ Header Section
 #homeIcon {
   width: 2rem;
   height: 2rem;
-  
+
 }
 
 
@@ -102,6 +102,7 @@ About Section
 Project Section + Media Queries
 --------------------------------------
   */
+
 @media (max-width: 600px){
  
   .project__main{

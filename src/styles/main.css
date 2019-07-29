@@ -7,18 +7,41 @@ General Styles
 @import url("https://fonts.googleapis.com/css?family=Crushed");
 @import "bootstrap.min.css";
 html {
-    background-color: lavenderblush;
+  
     font-size: 62.5%;/* 62.5% = 1rem    */
     scroll-behavior: smooth;
     
   }
 nav {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
-
+#gatsby-focus-wrapper {
+  background-color: #fff;
+  background-image:
+  linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+  linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+}
 main {
   display:grid;
   grid-gap: 20px;
+}
+
+.header__container > .card {
+  border: 0px;
+}
+.custom__card > span > a:hover {
+  color: inherit;
+}
+.project--card > a:hover {
+  color: inherit;
+  text-decoration: none;
+  background: none;
+}
+
+.header__container, .about, .project--card {
+  border: 1px solid rgba(0,0,0,0.125);
+  background-color: #ffffff;
 }
 
  /*
@@ -33,10 +56,13 @@ Header Section
   grid-template-columns: 100%;
 } */
 
+.navbar-brand {
+  margin-left: 15px;
+}
 #homeIcon {
   width: 2rem;
   height: 2rem;
-
+  margin-bottom: 0px;
 }
 
 
@@ -48,7 +74,7 @@ About Section
 --------------------------------------
   */
   .about {
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0,0,0,0.125);
   }
   .about__heading{
     text-align:center;
@@ -117,6 +143,11 @@ Project Section + Media Queries
     border: 1px solid rgba(0, 0, 0, 0.8);
     display: block;
     padding: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  .project--card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   .header__container {
     display: grid;
@@ -140,6 +171,11 @@ Project Section + Media Queries
     border: 1px solid rgba(0, 0, 0, 0.8);
     display: block;
     padding: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  .project--card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   .project--card p {
     margin-left: 25%;
@@ -167,6 +203,11 @@ Project Section + Media Queries
     border: 1px solid rgba(0, 0, 0, 0.8);
     display: block;
     padding: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  .project--card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   .project--card p {
     margin-left: 25%;
@@ -198,9 +239,14 @@ Project Section + Media Queries
     margin: 0px 0px 0px 0px;
   } 
   .project--card{
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0,0,0,0.125);;
     display: block;
     padding: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  .project--card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   .project--card p {
     margin-left: 0%;

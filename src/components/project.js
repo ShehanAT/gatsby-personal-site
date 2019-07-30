@@ -51,6 +51,7 @@ const Project = ({ siteTitle }) => (
           </a>
         </div>
         <div className="project--card">
+            <a href="https://atukoran.myweb.cs.uwindsor.ca/project/php/home.php">
             <div className="project--card--heading">
                 <img src={libraryManager} className="project__image" alt="picture of my Library Manager project"/>
                 <h4>Library Manager</h4>
@@ -59,6 +60,7 @@ const Project = ({ siteTitle }) => (
                 User can issue books and join waiting lists for books
                 currently issued.  
             </p>
+          </a>
         </div>
         </div>
     </div>

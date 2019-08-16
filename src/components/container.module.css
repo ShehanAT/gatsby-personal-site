@@ -1,0 +1,7 @@
+/* the module.css at the end of the file signals Gatsby that the file 
+should be processed as a CSS module */
+
+.container {
+    margin: 3rem auto;
+    max-width: 600px;
+  }

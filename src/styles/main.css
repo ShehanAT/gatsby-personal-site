@@ -5,13 +5,15 @@ General Styles
 --------------------------------------
   */
 @import url("https://fonts.googleapis.com/css?family=Crushed");
-@import "bootstrap.min.css";
+
 html {
   
     font-size: 62.5%;/* 62.5% = 1rem    */
     scroll-behavior: smooth;
     
   }
+
+
 nav {
   margin-bottom: 30px;
 }
@@ -27,9 +29,7 @@ main {
   grid-gap: 20px;
 }
 
-.header__container > .card {
-  border: 0px;
-}
+
 .custom__card > span > a:hover {
   color: inherit;
 }
@@ -38,31 +38,101 @@ main {
   text-decoration: none;
   background: none;
 }
-
-.header__container, .about, .project--card {
+.about, .project--card {
   border: 1px solid rgba(0,0,0,0.125);
   background-color: #ffffff;
 }
+
+section ul li a,
+section ul li a:after,
+section ul li a:before {
+	-webkit-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
 
  /*
 --------------------------------------
 Header Section
 --------------------------------------
   */
+  .header {
+    height: 100vh;
+    width: 100vw;
+  }
+  .logo__container {
+    display: flex;
+  }
+  .header__container > .card {
+    border: 0px;
+  }
 
-/* .header__container {
-  display: grid;
-  background-color: green;
-  grid-template-columns: 100%;
-} */
 
 .navbar-brand {
   margin-left: 15px;
 }
-#homeIcon {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 0px;
+
+#logo{
+  flex: 0.5;
+  margin: 50px auto 0px auto;
+}
+section ul li a {
+  border-top: 1px solid rgba(0,0,0,0);
+  margin: 4px;
+}
+section ul li a:after {
+  color: #f0a;
+  content: '\00bb'; /* code for &raquo; */
+  display: block;
+  float: right;
+  opacity: 0;
+  overflow: hidden;
+  width: 0;
+}
+section ul {
+  display: block;
+  text-align: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+section ul li{
+  display: inline-block;
+}
+section ul li a {
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffdf52;
+  border-radius: 12px;
+	display: block;
+	line-height: 50px;
+	padding: 0 30px;
+	text-decoration: none;
+}
+section ul li a:after {
+  color: #f0a;
+  content: "\02186"; /* code for &raquo; */
+  display: block;
+  float: right;
+  opacity: 0;
+  overflow: hidden;
+  width: 0;
+}
+section ul li a:hover {
+  background-color: #f0d76b;
+  border-radius: 12px;
+  border-top: 1px solid rgba(255,255,255,.1);
+  box-shadow: 0 2px 2px rgba(0,0,0,.2);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+section ul li a:hover:after {
+  opacity: 1;
+  width: 20px;
+}
+
+#headerButton{
+  text-align: center;
 }
 
 

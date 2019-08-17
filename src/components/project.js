@@ -1,5 +1,3 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import React from "react";
 import twitterPic from "../images/twitterPic.png";
 import reactImageGallery from "../images/reactImageGallery.png";
@@ -14,7 +12,7 @@ const Project = ({ siteTitle }) => (
         <div className="project--card">
             <a href="http://159.89.116.234:8080/">
             <div className="project--card--heading">
-            <img src={reactImageGallery} className="project__image"  alt="picture of my React Image Gallery project"/>
+            <img src={reactImageGallery} className="project__image"  alt="React Gallery project"/>
                 <h4>React Image Gallery</h4>
             </div>
             <p>
@@ -27,7 +25,7 @@ const Project = ({ siteTitle }) => (
         <div className="project--card">
         <a href="https://fathomless-refuge-88305.herokuapp.com/">
             <div className="project--card--heading">
-                <img src={ocrCapstone} className="project__image"  alt="picture of my OCR Capstone project"/>
+                <img src={ocrCapstone} className="project__image"  alt="OCR Capstone project"/>
                 <h4>OCR with Flickr</h4>
             </div>
         <p>
@@ -40,7 +38,7 @@ const Project = ({ siteTitle }) => (
         <div className="project--card">
           <a href="https://agile-thicket-44316.herokuapp.com/">
             <div className="project--card--heading">
-                <img src={twitterPic} className="project__image"  alt="picture of my Twitter Interface project"/>
+                <img src={twitterPic} className="project__image"  alt="Twitter Interface project"/>
                 <h4>Twitter Interface</h4>
             </div>
             <p>
@@ -53,7 +51,7 @@ const Project = ({ siteTitle }) => (
         <div className="project--card">
             <a href="https://atukoran.myweb.cs.uwindsor.ca/project/php/home.php">
             <div className="project--card--heading">
-                <img src={libraryManager} className="project__image" alt="picture of my Library Manager project"/>
+                <img src={libraryManager} className="project__image" alt="Library Manager project"/>
                 <h4>Library Manager</h4>
             </div>
             <p>Libary Management System build using PHP, MySQL and Javascript.

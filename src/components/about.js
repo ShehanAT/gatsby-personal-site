@@ -1,12 +1,7 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import React, {Component} from "react";
-import gatsbyImg from "../images/gatsby-icon.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import TreehouseLogo from "../images/TreehouseLogo.png";
 import freeCodeCampLogo from "../images/freeCodeCampLogo.jpg";
-import profilePic from "../images/profilePic.png";
+
 export default class About extends Component{
     constructor(props){
         super(props);

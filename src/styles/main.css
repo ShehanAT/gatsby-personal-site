@@ -26,7 +26,6 @@ nav {
 }
 main {
   display:grid;
-  grid-gap: 20px;
 }
 
 
@@ -135,7 +134,35 @@ section ul li a:hover:after {
   text-align: center;
 }
 
+/*
+--------------------
+Navbar Section
+--------------------
+*/
+.navbar-nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-bottom: 7px solid #f0d76b;
+}
+.navbar-nav li{
+  float: left;
+  padding: 0px 5px;
+}
 
+.navbar-nav li a{
+  display: inline-block;
+  text-transform: uppercase; 
+  padding: 13px 13px 13px 10px;
+  margin-left: 0px;
+  text-decoration: none;
+  color: #efefef;
+}
+.navbar-nav li:first-child{
+  margin-left: 100px;
+}
 
 
   /*

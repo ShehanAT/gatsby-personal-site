@@ -6,17 +6,18 @@ General Styles
   */
 @import url("https://fonts.googleapis.com/css?family=Crushed");
 
+
 html {
   
     font-size: 62.5%;/* 62.5% = 1rem    */
     scroll-behavior: smooth;
-    
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
   }
 
 
-nav {
-  margin-bottom: 30px;
-}
+
 #gatsby-focus-wrapper {
   background-color: #fff;
   background-size: 100% 1.2em;
@@ -169,20 +170,18 @@ About Section
 --------------------------------------
   */
 
+
   .about__heading{
     text-align:left;
     
   }
   .about__heading h2{
-    margin-left: 8%;
     font-size: 40px;
   }
   .about-container {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-  
-    align-items: center;
-    margin: 0px 0px 0px 0px;
+    display: block;
+ 
+    margin: 0px;
   }
   .about__blurb{
     width: 75%;
@@ -197,7 +196,68 @@ About Section
 .skill-icon span:after {
   content: 'o';
 }
+.skill-unit{
+  width: 500px;
+  margin-left: 15%;
+  float: left;
+}
+.skill-icons{
+  font-size: 0;
+  margin: 3px 0 30px;
+}
+.about__icons {
+  width: 10%;
+}
 
+.about__skills__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px auto;
+}
+.about__img__section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  margin: 0 20%;
+}
+.about__heading{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+}
+.about__blurb{
+  margin: 0 auto;
+  text-align: center;
+  max-width: 620px;
+}
+.about__blurb p{
+  letter-spacing: 1px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.about__blurb p a {
+  text-decoration: none;
+  color: #ffdf52;
+}
+.about__skills__container{
+  max-width: 1000px;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.skill-label {
+  letter-spacing: 1px;
+}
+
+.skill-unit.skill-right {
+  margin-left: 10%;
+}
  
 
 
@@ -224,14 +284,11 @@ About Section
     border-radius: 1rem;
 }
 #aboutProfilePic{
-  
-  margin-left: auto;
-  margin-right: 0px;
   width: 8rem;
   height: 8rem;
   border-radius: 3rem;
   display: block;
-  margin: 0 auto;
+  margin: 0px;
 }
   /*
 --------------------------------------

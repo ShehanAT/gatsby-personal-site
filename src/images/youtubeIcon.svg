@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 104 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-76.9954,-710.342)">
+        <g transform="matrix(0.625651,0,0,0.587665,-134.059,650.318)">
+            <circle cx="419.832" cy="184.636" r="82.496" style="fill:rgb(255,229,117);"/>
+        </g>
+        <g id="youtube" transform="matrix(0.122197,0,0,0.114778,128.609,758.822)">
+            <g transform="matrix(1,0,0,1,-256,-256)">
+                <g transform="matrix(1,0,0,1,0,61)">
+                    <path d="M75,390L437,390C478.355,390 512,356.355 512,315L512,75C512,33.645 478.355,0 437,0L75,0C33.645,0 0,33.645 0,75L0,315C0,356.355 33.645,390 75,390ZM30,75C30,50.188 50.188,30 75,30L437,30C461.813,30 482,50.188 482,75L482,315C482,339.813 461.813,360 437,360L75,360C50.188,360 30,339.813 30,315L30,75Z" style="fill-rule:nonzero;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,0,61)">
+                    <path d="M181,94.508L181,298.406L361.5,194.785L181,94.508ZM211,145.492L300.5,195.215L211,246.594L211,145.492Z" style="fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

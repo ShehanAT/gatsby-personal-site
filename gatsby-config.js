@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
+    `gatsby-remark-emoji`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

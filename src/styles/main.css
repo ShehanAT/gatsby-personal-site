@@ -389,6 +389,8 @@ Project Section +
 .thumb-container label:hover{
   opacity: 1;
 }
+
+
 .thumb-unit{
   position: relative;
 }

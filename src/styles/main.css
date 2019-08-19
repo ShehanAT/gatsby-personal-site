@@ -299,9 +299,61 @@ Project Section + Media Queries
 .work__heading h2{
   text-transform: uppercase;
 }
-.workwrap__project__img{
-  width: 7%;
+.workwrap__bigImg__section img{
+  border: 1px solid;
 }
+.workwrap__smallImg__section .img__column img {
+  border: 1px solid;
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+.workwrap__smallImg__section .img__column img:hover{
+  opacity: 1;
+}
+
+.workwrap__project__main__img{
+  width: 100%;
+  margin: 0px;
+}
+.workwrap__img__section{
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 425px;
+  width: 75%;
+  margin-left: auto;
+}
+.project-title{
+  flex:1;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom:0px;
+  padding-top:25px;
+}
+.project__details__icons{
+  width: 50%;
+}
+.project__details__heading{
+  display: flex;
+}
+#project__detials__back{
+  width:75px;
+}
+.workwrap__overview__section ul{
+  list-style: none;
+  margin: 0px;
+}
+.workwrap__overview__section ul li{
+  float: left;
+  margin-right: 5%;
+}
+.workwrap__overview__section p{
+  text-align: left;
+  float:left;
+}
+.project__icons{
+  width: 10%;
+}
+
 @media (max-width: 600px){
  
   .work__main{

@@ -14,8 +14,10 @@ export default class Work extends Component {
         var AllprojectDetails = document.querySelectorAll(".project-details");
         AllprojectDetails.forEach((project) =>  project.style.display = "none");
     }
-    showProjectDetails = e => {
-        var projectId = e.target.id.slice(6);
+    showProjectDetails = (e) => {
+        console.log(e.currentTarget.id);
+        console.log(e.target.id.slice(6));
+        var projectId = e.currentTarget.id.slice(6);
         var project = document.getElementById("details-" + projectId);
         project.style.display = "block";
         var projectDetailSection = document.getElementById("work-container");
@@ -58,49 +60,49 @@ export default class Work extends Component {
                 <div className="work-belt">
                 <div className="thumb-wrap">
                     <div className="thumb-container" id="thumb-container">
-                    <label htmlFor="reactImageGallery"  onClick={this.showProjectDetails.bind(this)}>
+                    <label htmlFor="reactImageGallery"  onClick={this.showProjectDetails.bind(this)}  id="thumb-1">
                         <div className="thumb-unit">
-                        <img src={reactImageGallery} className="work__image"  id="thumb-1" alt="Flickr Gallery project" />
+                        <img src={reactImageGallery} className="work__image"  alt="Flickr Gallery project" />
                         </div>
                         <div className="thumb-overlay">
                         <strong>React Image Gallery</strong>
                         </div>
                     </label>
-                    <label htmlFor="OCRWithFlickr"  onClick={this.showProjectDetails.bind(this)}>
+                    <label htmlFor="OCRWithFlickr"  onClick={this.showProjectDetails.bind(this)}  id="thumb-2">
                         <div className="thumb-unit">
-                        <img src={ocrCapstone} className="work__image"  id="thumb-2" alt="OCR Capstone work"/>
+                        <img src={ocrCapstone} className="work__image"  alt="OCR Capstone work"/>
                         </div>
                         <div className="thumb-overlay">
                         <strong>OCR with Flickr</strong>
                         </div>
                     </label>
-                    <label htmlFor="morningInterface"  onClick={this.showProjectDetails.bind(this)}>
+                    <label htmlFor="morningInterface"  onClick={this.showProjectDetails.bind(this)} id="thumb-3">
                         <div className="thumb-unit">
-                        <img src={morningInterface} className="work__image"  id="thumb-3" alt="Morning Interface app"/>
+                        <img src={morningInterface} className="work__image"   alt="Morning Interface app"/>
                         </div>
                         <div className="thumb-overlay">
                         <strong>Morning Interface</strong>
                         </div>
                     </label>
-                    <label htmlFor="libraryManager"  onClick={this.showProjectDetails.bind(this)}>
+                    <label htmlFor="libraryManager"  onClick={this.showProjectDetails.bind(this)} id="thumb-4">
                         <div className="thumb-unit">
-                        <img src={libraryManager} className="work__image" id="thumb-4" alt="Library Manager work"/>
+                        <img src={libraryManager} className="work__image"  alt="Library Manager work"/>
                         </div>
                         <div className="thumb-overlay">
                         <strong>Library Manager</strong>
                         </div>
                     </label>
-                    <label htmlFor="virtualAssistant" onClick={this.showProjectDetails.bind(this)}>
+                    <label htmlFor="virtualAssistant" onClick={this.showProjectDetails.bind(this)} id="thumb-5">
                         <div className="thumb-unit">
-                        <img src={virtualAssistant} className="work__image"  id="thumb-5" alt="virtualAssistant app"/>
+                        <img src={virtualAssistant} className="work__image"   alt="virtualAssistant app"/>
                         </div>
                         <div className="thumb-overlay">
                         <strong>Virtual Assistant</strong>
                         </div>
                     </label>
-                    <label htmlFor="southCanStrength"  onClick={this.showProjectDetails.bind(this)}>
+                    <label htmlFor="southCanStrength"  onClick={this.showProjectDetails.bind(this)}  id="thumb-6">
                         <div className="thumb-unit">
-                        <img src={southCanStrength} className="work__image" id="thumb-6" alt="southCanStrength website"/>
+                        <img src={southCanStrength} className="work__image" alt="SouthCanStrength website"/>
                         </div>
                         <div className="thumb-overlay">
                         <strong>SouthCanStrength Website</strong>

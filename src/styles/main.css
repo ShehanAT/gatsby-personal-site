@@ -414,6 +414,81 @@ Project Section +
   opacity: 0.3;
 }
 
+/*
+--------------------------------------
+Testimonials Section
+--------------------------------------
+*/
+.testimonials__heading h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.testimonials__profile__img{
+  width: 25%;
+  border-radius: 50%;
+}
+.testimonials__profile .left-arrow{
+  text-align: center;
+}
+.testimonials__profile .right-arrow{
+  text-align: center;
+}
+
+.testimonials__main-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.testimonials__profile__img{
+  width: 50%;
+}
+.profile__info{
+  text-align: center;
+}
+figcaption strong{
+  display: block;
+}
+figcaption em{
+  font-size: 14px;
+}
+.arrow{
+  cursor: pointer;
+  text-align: center;
+  opacity: 0.5;
+}
+.arrow:hover {
+  opacity: 1;
+}
+
+.testimonials__profile{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.arrow{
+  width: 5%;
+}
+.testimonials__gallery{
+  display: flex;
+  text-align: center;
+  width: 40%;
+  margin: 0px auto;
+}
+.gallery__img{
+  cursor: pointer;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+.gallery__img:hover{
+  opacity: 1;
+}
+ .active-client img{
+  cursor: none;
+  opacity: 1;
+}
+
+
+
+
 
 
   /*

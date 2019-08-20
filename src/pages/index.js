@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Work from "../components/work";
 import Navbar from "../components/navbar";
 import {Helmet} from "react-helmet";
+import Testimonials from "../components/testimonials";
 const IndexPage = () => (
   <Layout>
     <Helmet>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Navbar />
     <About />
     <Work />
+    <Testimonials />
   </Layout>
 )
 

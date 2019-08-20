@@ -482,7 +482,7 @@ figcaption em{
   opacity: 1;
 }
  .active-client img{
-  cursor: none;
+  cursor: default;
   opacity: 1;
 }
 

@@ -6,27 +6,76 @@ import client2 from "../images/tmpClient2.jpg";
 import client3 from "../images/tmpClient3.jpg";
 
 export default class Testimonials extends Component{
+    constructor(){
+        super();
+        this.state ={
+            clientInfo: [
+                { 
+                    "img-src": client1, 
+                    "blurb" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    "name" : "Ty Scratch", 
+                    "job" : "Strength Coach,  SouthCanStrength"
+                },
+                { 
+                    "img-src": client2, 
+                    "blurb" : "idarem ipsum dolor sit amet, consesdctetur  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    "name" : "Jacob Richie", 
+                    "job" : "Personal Trainer,  Limitless Training Centre"
+                },
+                { 
+                    "img-src": client3, 
+                    "blurb" : "Lorem ium dolorasd sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    "name" : "Denna Syed", 
+                    "job" : "DevOps Engineer,  IsmileTechnologies"
+                },
+            ]
+        }
+    }
+    arrowToggleClient = e => {
+        //id of the previous client
+        
+        var arrowDirection = e.currentTarget.id;
+        //remove .active-client from previous client
+        var prevClient = document.querySelectorAll(".active-client").item(0);
+        prevClient.classList.remove("active-client");
+        var prevId = parseInt(prevClient.id.slice(7));
+        switch(arrowDirection){
+            case "left-arrow":
+                if(prevId == 1){
+                    //going from client 1 to client 3, 0 because prevId is zero-indexed
+                    this.switchClient(3);
+                }else{
+                    //zero 
+                    this.switchClient(prevId - 1);
+                }
+                break;
+            case "right-arrow":
+                if(prevId == 3){
+                    this.switchClient(1);
+                }else{
+                    this.switchClient(prevId + 1);
+                }
+                break;
+            default:
+                break;
+        }
+        // console.log(prevClient[0].attributes.id);
+    }
+    switchClient = nextClientId => {
+        console.log(nextClientId);
+        var activePic= document.getElementById("testimonials__profile__img");
+        var  activeBlurb = document.getElementById("testimonials__profile__blurb");
+        var activeName = document.getElementById("testimonials__profile__name");
+        var activeJob = document.getElementById("testimonials__profile__job");
+        var client = document.getElementById("client-"+nextClientId);
+        client.classList.add("active-client");
+        activePic.src = this.state.clientInfo[nextClientId - 1]["img-src"];
+        activeBlurb.textContent = this.state.clientInfo[nextClientId -1 ]["blurb"];
+        activeName.textContent = this.state.clientInfo[nextClientId -1 ]["name"];
+        activeJob.textContent = this.state.clientInfo[nextClientId - 1 ]["job"];
+        console.log("passing1");
+    }
     toggleClient = e => {
-        const clientInfo = [
-            { 
-                "img-src": client1, 
-                "blurb" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "name" : "Ty Scratch", 
-                "job" : "Strength Coach,  SouthCanStrength"
-            },
-            { 
-                "img-src": client2, 
-                "blurb" : "idarem ipsum dolor sit amet, consesdctetur  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "name" : "Jacob Richie", 
-                "job" : "Personal Trainer,  Limitless Training Centre"
-            },
-            { 
-                "img-src": client3, 
-                "blurb" : "Lorem ium dolorasd sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "name" : "Denna Syed", 
-                "job" : "DevOps Engineer,  IsmileTechnologies"
-            },
-        ]
         var clientId = parseInt(e.currentTarget.id.slice(7)) - 1;//eliminate zero-indexing
         if(document.querySelectorAll(".active-client")){
             //toggle between clients on client profile pic click
@@ -36,12 +85,11 @@ export default class Testimonials extends Component{
             var  activeBlurb = document.getElementById("testimonials__profile__blurb");
             var activeName = document.getElementById("testimonials__profile__name");
             var activeJob = document.getElementById("testimonials__profile__job");
-            console.log(activePic, activeBlurb,  activeName, activeJob);
             
-            activePic.src = clientInfo[clientId]["img-src"];
-            activeBlurb.textContent = clientInfo[clientId]["blurb"];
-            activeName.textContent = clientInfo[clientId]["name"];
-            activeJob.textContent = clientInfo[clientId]["job"];
+            activePic.src = this.state.clientInfo[clientId]["img-src"];
+            activeBlurb.textContent = this.state.clientInfo[clientId]["blurb"];
+            activeName.textContent = this.state.clientInfo[clientId]["name"];
+            activeJob.textContent = this.state.clientInfo[clientId]["job"];
 
             //add .active-client to current client
             var currentClient = document.getElementById("client-" + (clientId + 1));
@@ -64,7 +112,7 @@ export default class Testimonials extends Component{
                 </div>
                 <div className="testimonials__profile">
                     <div className="left-arrow">
-                        <img src={leftIcon} className="testimonials__leftArrow arrow"/>
+                        <img src={leftIcon} className="testimonials__leftArrow arrow" id="left-arrow" onClick={this.arrowToggleClient.bind(this)}/>
                     </div>
                     <div className="testimonials__main-content">
                     <div className="profile__info">
@@ -79,7 +127,7 @@ export default class Testimonials extends Component{
                     </div>
                     </div>
                     <div className="right-arrow">
-                        <img  src={rightIcon} className="testimonials__leftArrow arrow"/>
+                        <img  src={rightIcon} className="testimonials__leftArrow arrow" id="right-arrow" onClick={this.arrowToggleClient.bind(this)}/>
                     </div>
                 </div>
                 <div className="testimonials__gallery">

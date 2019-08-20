@@ -8,3 +8,4 @@
 * 08/17/2019: added header background, button styles, added navbar structure, added skills section structure
 * 08/18/2019: about section styles for 1200px added, added img-wrap structure for work section
 * 08/19/2019: structure for project details section done, added work-belt functionality to work section
+* 08/20/2019: added testimonials section, gallery section works

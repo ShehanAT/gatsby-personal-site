@@ -122,7 +122,7 @@ export default class Testimonials extends Component{
                             <em id="testimonials__profile__job">Strength Coach, SouthCanStrength</em>
                         </figcaption>
                     </div>
-                    <div className="testimontials__blurb">
+                    <div className="testimonials__blurb">
                         <p id="testimonials__profile__blurb" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     </div>

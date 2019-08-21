@@ -494,6 +494,9 @@ figcaption em{
   cursor: default;
   opacity: 1;
 }
+.left-arrow, .right-arrow{
+  display:block;
+}
 
 /*
 --------------------------------------
@@ -595,6 +598,16 @@ hr{
   margin: 0 1em;
   background: #000000;
 }
+.contact__details label input , .contact__message label input{
+  border: 3px solid #000000;
+}
+.contact__message label textarea {
+  border: 3px solid #000000;
+}
+.contact__submit input{
+  background-color: #000000;
+  color: #ffffff;
+}
 
   /*
 --------------------------------------
@@ -641,7 +654,12 @@ Footer Section
 
   footer{
     text-align: center;
+    grid-template-columns: 1fr 1fr;
   }
+  .logo__container img{
+    content: url("../images/logo-small.svg");
+  }
+  
 
 
   /*
@@ -703,21 +721,7 @@ Media Queries
  .text-content{
   max-width: 100vw;
  }
-  .work__main{
-    display: grid;
-    align-items: center;
-    margin: 0px 0px 0px 0px;
-  }
-  .work--card{
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    display: block;
-    padding: 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  }
-  .work--card:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
+
   .header__container {
     display: grid;
   
@@ -728,6 +732,122 @@ Media Queries
     max-width: 960px;
      /*padding: top right bottom left */
   }
+.about__heading h2{
+  font-size: 24px;
+}
+.about__img__section{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.about__icons{
+  width: 50%;
+  margin: 5px auto 5px auto;
+}
+#aboutProfilePic{
+  margin: 0px auto;
+}
+.about__skills__container{
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: 0px auto 50px auto;
+}
+.skill-unit, .skill-unit.skill-right{
+  margin: 0px 0px 20px 0px;
+}
+.thumb-wrap, .work-belt, .work-wrap {
+  width: 100vw;
+}
+.thumb-container{
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: 0px auto 50px auto;
+}
+#work-container{
+  max-width: 100vw;
+  grid-template-columns: 1fr;
+}
+.project__details__heading{
+  display: block;
+}
+.project__details__heading h4{
+  font-size: 24px;
+  width: 275px;
+}
+.workwrap__overview__section p{
+  font-size: 16px;
+  width: 275px;
+}
+.workwrap__img__section{
+  grid-template-columns: 100vw;
+  margin: 0px auto;
+  width: 90%;
+
+}
+.workwrap__img__section {
+  grid-template-rows: 30vh;
+  width: 100%;
+}
+.project-title{
+  padding-top: 0px;
+}
+.workwrap__smallImg__section .img__column img{
+  width: 162px;
+  height: 92px;
+}
+.workwrap__bigImg__section img{
+  width: 90vw;
+  height: 150px;
+}
+
+.left-arrow, .right-arrow{
+  display:none;
+}
+.testimonials__profile {
+  grid-template-columns: 100vw;
+}
+.testimonials__main-content{
+  grid-template-columns: 100vw;
+}
+.testimonials__blurb {
+  max-width: 90%;
+  text-align: center;
+  margin: 0px auto;
+}
+.testimonials__gallery {
+  width: 75%;
+}
+.contact{
+  height: 75vh;
+  min-height:0px;
+  background-image: url("../images/contactBackground-small.svg");
+}
+
+.contact__heading{
+  margin: 20px 0px 20px 0px;
+  font-size: 18px;
+}
+.social__section{
+  margin-top: 70px;
+}
+.social__section img{
+  width: 7%;
+}
+.contact__form{
+  width: 75%;
+}
+.footer{
+  grid-template-columns: 1fr;
+}
+.logo__container img{
+  content: url("../images/logo-small.svg");
+}
+.logo__container{
+  margin-top: 10px;
+}
+
+
+
+
 }
 @media (max-width: 900px) and (min-width: 600px){
   .work__main{

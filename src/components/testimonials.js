@@ -106,7 +106,7 @@ export default class Testimonials extends Component{
     }
     render(){
         return (
-            <div className="testimonials">
+            <div className="testimonials" id="testimonials">
                 <div className="testimonials__heading">
                     <h2>testimonials</h2>
                 </div>

@@ -171,16 +171,11 @@ About Section
   */
 
 
-  .about__heading{
-    text-align:left;
-    
-  }
   .about__heading h2{
     font-size: 40px;
   }
   .about-container {
     display: block;
- 
     margin: 0px;
   }
   .about__blurb{
@@ -212,24 +207,33 @@ About Section
 .about__skills__container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
 }
 .about__img__section{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 10px;
-  margin: 0 20%;
+  padding-left: 10px; 
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 30px;
+
 }
 .about__heading{
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .about__blurb{
   margin: 0 auto;
   text-align: center;
   max-width: 620px;
+  margin-bottom: 50px;
 }
 .about__blurb p{
   letter-spacing: 1px;
@@ -259,9 +263,6 @@ About Section
   margin-left: 10%;
 }
  
-
-
-
   .custom__card {
     display: block;
     padding: 0;
@@ -319,14 +320,17 @@ Project Section +
   margin: 0px auto;
 }
 .work-container{
-  max-width: 1000px; /* SUBJECT TO CHANGE     */
+  max-width: 1000px; 
 
   padding: 0 15px;
   box-sizing: border-box;
   position: relative;
   display: flex;
 }
-
+.work__heading{
+  text-align: center;
+  margin-bottom: 50px;
+}
 .work__heading h2{
   text-transform: uppercase;
 }
@@ -420,6 +424,8 @@ Testimonials Section
 --------------------------------------
 */
 .testimonials__heading h2{
+  margin-top: 50px;
+  margin-bottom: 75px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -498,11 +504,7 @@ Contact Section
   position: relative;
   min-height: 600px;
 }
-.contact__background{
-  /* position: absolute;
-  width: 1000px;
-  height: 400px; */
-}
+
 .social__section{
   text-align: center;
   margin-top: 50px;
@@ -516,7 +518,7 @@ Contact Section
 .contact__form{
   display:grid;
   grid-template-columns:1fr;   
-  margin-top: 100px;
+  margin-top: 150px;
   width:40%;
   margin:0px auto;
 }
@@ -557,8 +559,9 @@ Contact Section
 }
 .contact__submit input{
   padding: 10px;
+  margin-top:0px;
   font-size: 24px;
-  width: 33%;
+  width: 100%;
 }
 .contact__heading{
   text-align: center;
@@ -569,8 +572,9 @@ Contact Section
 }
 hr{
   width:80%;
-  margin-top:0;
-  padding-bottom:0;
+
+  margin-left:0px;
+  margin-right:0px;
   padding-left:0;
   padding-right:0;
   padding-top:0;
@@ -581,6 +585,7 @@ hr{
 }
 .contact__form__heading{
   text-align: center;
+  margin-bottom: 25px;
 }
 .divider:before, .divider:after {
   height: 1px;
@@ -596,6 +601,35 @@ Footer Section
 
 .footer{
   background-color: #000000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.logo__container img{
+  margin: 0px auto 0px auto;
+}
+.links__section ul{
+  text-align: left;
+  
+  list-style: none;
+  margin: 0px 100px;
+}
+.links__section ul li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.links__section ul li a:hover {
+  color: #B3B3B3;
+}
+.links__section {
+  margin: 0px auto;
+}
+.links__section h2{
+  margin: 0px 100px 5px 100px;
+  text-align: left;
+  color: #ffffff;
+}
+.logo__container img {
+  margin-top: 0px;
 }
 
 
@@ -743,6 +777,7 @@ Media Queries
   }
   .work__heading{
     text-align: center;
+    margin-bottom: 50px;
   }
   .work__image{
     width: 20rem;

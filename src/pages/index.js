@@ -7,6 +7,7 @@ import Navbar from "../components/navbar";
 import {Helmet} from "react-helmet";
 import Testimonials from "../components/testimonials";
 import Contact from "../components/contact";
+import Footer from "../components/footer";
 const IndexPage = () => (
   <Layout>
     <Helmet>
@@ -14,11 +15,14 @@ const IndexPage = () => (
         <title>Shehan Atuk</title>
     </Helmet>
     <Header />
+    <div className="text-content">
     <Navbar />
     <About />
     <Work />
     <Testimonials />
     <Contact />
+    <Footer />
+    </div>
   </Layout>
 )
 

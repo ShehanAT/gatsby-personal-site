@@ -6,13 +6,11 @@ import FacebookIcon from "../images/facebook.svg";
 import InstagramIcon from "../images/instagram.svg";
 import YoutubeIcon from "../images/youtube.svg";
 import GithubIcon from "../images/github.svg";
-import ContactBackground from "../images/ContactBackground.svg";
 export default class Contact extends Component{
 
     render(){
         return (
             <div className="contact">
-                {/* <img src={ContactBackground} className="contact__background" /> */}
                 <div className="contact__heading">
                     <h2>Lets Work Together</h2>
                 </div>

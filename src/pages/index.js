@@ -6,6 +6,7 @@ import Work from "../components/work";
 import Navbar from "../components/navbar";
 import {Helmet} from "react-helmet";
 import Testimonials from "../components/testimonials";
+import Contact from "../components/contact";
 const IndexPage = () => (
   <Layout>
     <Helmet>
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <About />
     <Work />
     <Testimonials />
+    <Contact />
   </Layout>
 )
 

@@ -486,9 +486,117 @@ figcaption em{
   opacity: 1;
 }
 
+/*
+--------------------------------------
+Contact Section
+--------------------------------------
+*/
+.contact{
+  background-image: url("../images/contactBackground.svg");
+  background-size: 100.2%;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 600px;
+}
+.contact__background{
+  /* position: absolute;
+  width: 1000px;
+  height: 400px; */
+}
+.social__section{
+  text-align: center;
+  margin-top: 50px;
+}
+.contact__socials__icons{
+  width: 2%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
+.contact__form{
+  display:grid;
+  grid-template-columns:1fr;   
+  margin-top: 100px;
+  width:40%;
+  margin:0px auto;
+}
+.contact__details{
+  text-align: center;
+}
+.contact__submit{
+  text-align:right;
+}
+.contact__message{
+  text-align: left;
+}
+#contact__message__textarea{
+  width:100%;
+}
+.contact__details label {    
+  width:50%;    
+  float:left;
+}
+.contact__details__name{
+  padding-right: 10px;
+}
+.contact__details__email{
+  padding-left: 10px;
+}
+.contact__details label span{
+  display:block;
+  text-align:left;
+}
+.contact__details label input{
+  width: 100%;
+}
+.contact__message label {
+  text-align: left;
+}
+.contact__message label input {
+  width: 100%;
+}
+.contact__submit input{
+  padding: 10px;
+  font-size: 24px;
+  width: 33%;
+}
+.contact__heading{
+  text-align: center;
+  text-transform: uppercase;
 
+  margin-top: 75px;
+  margin-bottom: 150px;
+}
+hr{
+  width:80%;
+  margin-top:0;
+  padding-bottom:0;
+  padding-left:0;
+  padding-right:0;
+  padding-top:0;
+  margin-bottom:calc(1.45rem - 1px);
+  background: #000000;
+  border:none;
+  height:5px;
+}
+.contact__form__heading{
+  text-align: center;
+}
+.divider:before, .divider:after {
+  height: 1px;
+  margin: 0 1em;
+  background: #000000;
+}
 
+  /*
+--------------------------------------
+Footer Section
+--------------------------------------
+  */
+
+.footer{
+  background-color: #000000;
+}
 
 
   /*

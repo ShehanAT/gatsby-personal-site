@@ -41,7 +41,7 @@ export default class Testimonials extends Component{
         var prevId = parseInt(prevClient.id.slice(7));
         switch(arrowDirection){
             case "left-arrow":
-                if(prevId == 1){
+                if(prevId === 1){
                     //going from client 1 to client 3, 0 because prevId is zero-indexed
                     this.switchClient(3);
                 }else{
@@ -50,7 +50,7 @@ export default class Testimonials extends Component{
                 }
                 break;
             case "right-arrow":
-                if(prevId == 3){
+                if(prevId === 3){
                     this.switchClient(1);
                 }else{
                     this.switchClient(prevId + 1);
@@ -112,11 +112,11 @@ export default class Testimonials extends Component{
                 </div>
                 <div className="testimonials__profile">
                     <div className="left-arrow">
-                        <img src={leftIcon} className="testimonials__leftArrow arrow" id="left-arrow" onClick={this.arrowToggleClient.bind(this)}/>
+                        <img src={leftIcon} className="testimonials__leftArrow arrow" id="left-arrow" onClick={this.arrowToggleClient.bind(this)} alt="left arrow icon"/>
                     </div>
                     <div className="testimonials__main-content">
                     <div className="profile__info">
-                    <img src={client1} className="testimonials__profile__img " id="testimonials__profile__img"/>
+                    <img src={client1} className="testimonials__profile__img " id="testimonials__profile__img" alt="active client"/>
                     <figcaption>
                             <strong id="testimonials__profile__name">Ty Scratch</strong>
                             <em id="testimonials__profile__job">Strength Coach, SouthCanStrength</em>
@@ -127,18 +127,18 @@ export default class Testimonials extends Component{
                     </div>
                     </div>
                     <div className="right-arrow">
-                        <img  src={rightIcon} className="testimonials__leftArrow arrow" id="right-arrow" onClick={this.arrowToggleClient.bind(this)}/>
+                        <img  src={rightIcon} className="testimonials__rightArrow arrow" id="right-arrow" onClick={this.arrowToggleClient.bind(this)} alt="right arrow icon"/>
                     </div>
                 </div>
                 <div className="testimonials__gallery">
                     <div className="testimonials__client active-client"  id="client-1" onClick={this.toggleClient.bind(this)}>
-                        <img src={client1} className="gallery__img"/>
+                        <img src={client1} className="gallery__img" alt="client 1 icon"/>
                     </div>
                     <div className="testimonials__client" id="client-2" onClick={this.toggleClient.bind(this)}>
-                        <img src={client2} className="gallery__img"/>
+                        <img src={client2} className="gallery__img" alt="client 2 icon"/>
                     </div>
                     <div className="testimonials__client " id="client-3" onClick={this.toggleClient.bind(this)}>
-                        <img src={client3} className="gallery__img"/>
+                        <img src={client3} className="gallery__img" alt="client 3 icon"/>
                     </div>
                 </div>
 

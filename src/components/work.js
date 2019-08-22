@@ -193,7 +193,7 @@ export default class Work extends Component {
                                             <a href="https://github.com/ShehanAT/OCR-capstoneProject"><img src={githubIcon} alt="github icon" className="project__details__icons"/></a>
                                         </li>
                                     </ul>
-                                    <p>Image Gallery built using React and the Flickr API. Allows user to send search queries to Flickr and displays image results.</p>
+                                    <p>Communicates with Flickr API and Microsoft Computer Vision API to allow the user to search images on Flickr then extract any potential words contained inside.</p>
                                 </div>
                             </div>
                         </div> 
@@ -228,7 +228,7 @@ export default class Work extends Component {
                                             <a href="https://github.com/ShehanAT/Twitter-Interface"><img src={githubIcon} alt="github icon" className="project__details__icons"/></a>
                                         </li>
                                     </ul>
-                                    <p>Image Gallery built using React and the Flickr API. Allows user to send search queries to Flickr and displays image results.</p>
+                                    <p>Uses OAuth to sign in user with Twitter account and shows an interface containing detailed information pertaining to the user's Twitter account.</p>
                                 </div>
                             </div>
                         </div> 
@@ -263,7 +263,7 @@ export default class Work extends Component {
                                             <a href="https://github.com/ShehanAT/LibraryManager"><img src={githubIcon} alt="github icon" className="project__details__icons"/></a>
                                         </li>
                                     </ul>
-                                    <p>Image Gallery built using React and the Flickr API. Allows user to send search queries to Flickr and displays image results.</p>
+                                    <p>Libary Management System build using PHP, MySQL and Javascript. User can issue books and join waiting lists for books currently issued.</p>
                                 </div>
                             </div>
                         </div> 
@@ -298,7 +298,7 @@ export default class Work extends Component {
                                             <a href="https://github.com/ismiletech/VirtualAssistant-OCR"><img src={githubIcon} alt="github icon" className="project__details__icons"/></a>
                                         </li>
                                     </ul>
-                                    <p>Image Gallery built using React and the Flickr API. Allows user to send search queries to Flickr and displays image results.</p>
+                                    <p>Lets user upload image or pdf file and displays potential text contained within. Built using Google Cloud Storage and Google Cloud Vision API's</p>
                                 </div>
                             </div>
                         </div> 
@@ -333,7 +333,7 @@ export default class Work extends Component {
                                             <a href="https://github.com/ShehanAT/southCanStrengthWebsite"><img src={githubIcon} alt="github icon" className="project__details__icons"/></a>
                                         </li>
                                     </ul>
-                                    <p>Image Gallery built using React and the Flickr API. Allows user to send search queries to Flickr and displays image results.</p>
+                                    <p>Website made for SouthCanStrength coaching services company. Built from scratch to be responsive, implements accessibility guidelines, and industry best practices.</p>
                                 </div>
                             </div>
                         </div> 

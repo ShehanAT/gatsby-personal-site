@@ -7,6 +7,27 @@ import InstagramIcon from "../images/instagram.svg";
 import YoutubeIcon from "../images/youtube.svg";
 import GithubIcon from "../images/github.svg";
 export default class Contact extends Component{
+    showLinkedin(){
+        window.location.href = "https://www.linkedin.com/in/shehan-a-780622126/";
+    }
+    showStackoverflow(){
+        window.location.href = "https://stackoverflow.com/users/10871450/flyingfishcattle";
+    }
+    showTwitter(){
+        window.location.href = "https://twitter.com/Shehan_Atuk";
+    }
+    showFacebook(){
+        window.location.href = "https://www.facebook.com/shehan.atuk1";
+    }
+    showInstagram(){
+        window.location.href = "https://www.instagram.com/shehanthewebdev/";
+    }
+    showYoutube(){
+        window.location.href = "https://www.youtube.com/channel/UCtxed_NljgtAXrQMMdLvhrQ?view_as=subscriber";
+    }
+    showGithub(){
+        window.location.href = "https://github.com/ShehanAT";
+    }
 
     render(){
         return (
@@ -15,13 +36,13 @@ export default class Contact extends Component{
                     <h2>Lets Work Together</h2>
                 </div>
                 <div className="social__section">
-                    <img src={LinkinIcon} alt="linkedin icon" className="contact__socials__icons"/>
-                    <img src={StackoverflowIcon} alt="stackoverflow icon" className="contact__socials__icons"/>
-                    <img src={TwitterIcon} alt="twitter icon" className="contact__socials__icons"/>
-                    <img src={FacebookIcon} alt="faebook icon" className="contact__socials__icons"/>
-                    <img src={InstagramIcon} alt="instagram icon" className="contact__socials__icons"/>
-                    <img src={YoutubeIcon} alt="youtube icon" className="contact__socials__icons"/>
-                    <img src={GithubIcon} alt="github icon" className="contact__socials__icons"/>
+                    <img src={LinkinIcon} alt="linkedin icon" className="contact__socials__icons scaleanimation-target " onClick={this.showLinkedin.bind(this)}/>
+                    <img src={StackoverflowIcon} alt="stackoverflow icon" className="contact__socials__icons scaleanimation-target " onClick={this.showStackoverflow.bind(this)}/>
+                    <img src={TwitterIcon} alt="twitter icon" className="contact__socials__icons scaleanimation-target " onClick={this.showTwitter.bind(this)}/>
+                    <img src={FacebookIcon} alt="faebook icon" className="contact__socials__icons scaleanimation-target " onClick={this.showFacebook.bind(this)}/>
+                    <img src={InstagramIcon} alt="instagram icon" className="contact__socials__icons scaleanimation-target " onClick={this.showInstagram.bind(this)}/>
+                    <img src={YoutubeIcon} alt="youtube icon" className="contact__socials__icons scaleanimation-target " onClick={this.showYoutube.bind(this)}/>
+                    <img src={GithubIcon} alt="github icon" className="contact__socials__icons scaleanimation-target " onClick={this.showGithub.bind(this)}/>
                 </div>
                 <hr/>
                 

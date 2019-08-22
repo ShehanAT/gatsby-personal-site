@@ -57,7 +57,7 @@ export default class About extends Component{
                         <div className="skill-label">
                             Communication
                         </div>
-                        <div className="skill-icon">
+                        <div className="skill-icon skill1">
                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                         </div>
                       </div>
@@ -65,7 +65,7 @@ export default class About extends Component{
                         <div className="skill-label">
                             Organization
                         </div>
-                        <div className="skill-icon">
+                        <div className="skill-icon skill2">
                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                         </div>
                       </div>
@@ -73,7 +73,7 @@ export default class About extends Component{
                         <div className="skill-label">
                             Learning
                         </div>
-                        <div className="skill-icon">
+                        <div className="skill-icon skill3">
                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                         </div>
                       </div>
@@ -81,7 +81,7 @@ export default class About extends Component{
                         <div className="skill-label">
                             Teaching
                         </div>
-                        <div className="skill-icon">
+                        <div className="skill-icon skill4">
                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                         </div>
                       </div>
@@ -89,7 +89,7 @@ export default class About extends Component{
                         <div className="skill-label">
                             Planning
                         </div>
-                        <div className="skill-icon">
+                        <div className="skill-icon skill5">
                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                         </div>
                       </div>
@@ -97,7 +97,7 @@ export default class About extends Component{
                         <div className="skill-label">
                             App Development
                         </div>
-                        <div className="skill-icon">
+                        <div className="skill-icon skill6">
                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                         </div>
                       </div>
@@ -105,7 +105,7 @@ export default class About extends Component{
                         <div className="skill-label">
                             UI Design 
                         </div>
-                        <div className="skill-icon">
+                        <div className="skill-icon skill7">
                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                         </div>
                       </div>
@@ -113,7 +113,7 @@ export default class About extends Component{
                         <div className="skill-label">
                             UX Design
                         </div>
-                        <div className="skill-icon">
+                        <div className="skill-icon skill8">
                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                         </div>
                       </div>

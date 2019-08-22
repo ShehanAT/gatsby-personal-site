@@ -5,7 +5,7 @@ export default class Footer extends Component{
     render(){
         return (
             <footer className="footer">
-             <div className="logo__container">
+             <div className="footer__logo__container">
                     <img src={logo} alt="my logo" />
                 </div>
                 <div className="links__section">

@@ -32,16 +32,17 @@ const BackgroundSection = ({ className }) => (
                             backgroundRepeat: '',
                           }}
          >
+      
                <div className="logo__container">
                     <img src={logo} alt="my logo" id="logo"/>
                 </div>
                 <ul>
                   <li id="headerButton">
-                    <a href="#header" >View My Work</a>
+                    <a href="#work" >View My Work</a>
                   </li>
                 </ul>
-             
-         </BackgroundImage>
+         
+        </BackgroundImage>
       )
     }
     }

@@ -1,10 +1,23 @@
 import React, { Component } from "react";
-import morningInterface from "../images/morningInterface.png";
-import reactImageGallery from "../images/reactImageGallery.png";
-import ocrCapstone from "../images/ocrCapstone.png";
-import libraryManager from "../images/libraryManager.png";
-import virtualAssistant from "../images/virtualAssistant.png";
-import southCanStrength from "../images/southCanStrength.png";
+
+import reactImageGallery1 from "../images/reactImageGallery1.svg";
+import reactImageGallery2 from "../images/reactImageGallery2.svg";
+import reactImageGallery3 from "../images/reactImageGallery3.svg";
+import capstone1 from "../images/capstone1.svg";
+import capstone2 from "../images/capstone2.svg";
+import capstone3 from "../images/capstone3.svg";
+import morningInterface1 from "../images/morningInterface1.svg";
+import morningInterface2 from "../images/morningInterface2.svg";
+import morningInterface3 from "../images/morningInterface3.svg";
+import libraryManager1 from "../images/libraryManager1.svg";
+import libraryManager2 from "../images/libraryManager2.svg";
+import libraryManager3 from "../images/libraryManager3.svg";
+import virtualAssistant1 from "../images/virtualAssistant1.svg";
+import virtualAssistant2 from "../images/virtualAssistant2.svg";
+import virtualAssistant3 from "../images/virtualAssistant3.svg";
+import southCanStrength1 from "../images/southCanStrength1.svg";
+import southCanStrength2 from "../images/southCanStrength2.svg";
+import southCanStrength3 from "../images/southCanStrength3.svg";
 import externalLinkIcon from "../images/externalLinkIcon.svg";
 import githubIcon from "../images/githubIcon.svg";
 import backButtonIcon from "../images/backButtonIcon.svg";
@@ -64,7 +77,7 @@ export default class Work extends Component {
                     <div className="thumb-container" id="thumb-container">
                     <label htmlFor="reactImageGallery"  onClick={this.showProjectDetails.bind(this)}  id="thumb-1">
                         <div className="thumb-unit">
-                        <img src={reactImageGallery} className="work__image"  alt="Flickr Gallery project" />
+                        <img src={reactImageGallery1} className="work__image"  alt="Flickr Gallery project" />
                         </div>
                         <div className="thumb-overlay">
                         <strong>React Image Gallery</strong>
@@ -72,7 +85,7 @@ export default class Work extends Component {
                     </label>
                     <label htmlFor="OCRWithFlickr"  onClick={this.showProjectDetails.bind(this)}  id="thumb-2">
                         <div className="thumb-unit">
-                        <img src={ocrCapstone} className="work__image"  alt="OCR Capstone work"/>
+                        <img src={capstone1} className="work__image"  alt="OCR Capstone work"/>
                         </div>
                         <div className="thumb-overlay">
                         <strong>OCR with Flickr</strong>
@@ -80,7 +93,7 @@ export default class Work extends Component {
                     </label>
                     <label htmlFor="morningInterface"  onClick={this.showProjectDetails.bind(this)} id="thumb-3">
                         <div className="thumb-unit">
-                        <img src={morningInterface} className="work__image"   alt="Morning Interface app"/>
+                        <img src={morningInterface1} className="work__image"   alt="Morning Interface app"/>
                         </div>
                         <div className="thumb-overlay">
                         <strong>Morning Interface</strong>
@@ -88,7 +101,7 @@ export default class Work extends Component {
                     </label>
                     <label htmlFor="libraryManager"  onClick={this.showProjectDetails.bind(this)} id="thumb-4">
                         <div className="thumb-unit">
-                        <img src={libraryManager} className="work__image"  alt="Library Manager work"/>
+                        <img src={libraryManager1} className="work__image"  alt="Library Manager work"/>
                         </div>
                         <div className="thumb-overlay">
                         <strong>Library Manager</strong>
@@ -96,7 +109,7 @@ export default class Work extends Component {
                     </label>
                     <label htmlFor="virtualAssistant" onClick={this.showProjectDetails.bind(this)} id="thumb-5">
                         <div className="thumb-unit">
-                        <img src={virtualAssistant} className="work__image"   alt="virtualAssistant app"/>
+                        <img src={virtualAssistant1} className="work__image"   alt="virtualAssistant app"/>
                         </div>
                         <div className="thumb-overlay">
                         <strong>Virtual Assistant</strong>
@@ -104,7 +117,7 @@ export default class Work extends Component {
                     </label>
                     <label htmlFor="southCanStrength"  onClick={this.showProjectDetails.bind(this)}  id="thumb-6">
                         <div className="thumb-unit">
-                        <img src={southCanStrength} className="work__image" alt="SouthCanStrength website"/>
+                        <img src={southCanStrength1} className="work__image" alt="SouthCanStrength website"/>
                         </div>
                         <div className="thumb-overlay">
                         <strong>SouthCanStrength Website</strong>
@@ -123,17 +136,17 @@ export default class Work extends Component {
                             </div>
                             <div className="workwrap__img__section">
                                 <div className="workwrap__bigImg__section">
-                                    <img src={reactImageGallery} alt="Flickr Gallery project main img" className="workwrap__project__main__img"  id="workwrap__project__main__img1"/>
+                                    <img src={reactImageGallery1} alt="Flickr Gallery project main img" className="workwrap__project__main__img"  id="workwrap__project__main__img1"/>
                                 </div>
                                 <div className="workwrap__smallImg__section">
                                     <div className="img__column">
-                                        <img src={reactImageGallery} alt="Flickr Gallery project img1" className="workwrap__project__img"  id="11"onClick={this.switchImages.bind(this)}/>
+                                        <img src={reactImageGallery1} alt="Flickr Gallery project img1" className="workwrap__project__img"  id="11"onClick={this.switchImages.bind(this)}/>
                                     </div>
                                     <div className="img__column">
-                                        <img src={virtualAssistant} alt="Flickr Gallery project img1" className="workwrap__project__img" id="12" onClick={this.switchImages.bind(this)}/>
+                                        <img src={reactImageGallery2} alt="Flickr Gallery project img1" className="workwrap__project__img" id="12" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                     <div className="img__column">
-                                        <img src={southCanStrength} alt="Flickr Gallery project img1" className="workwrap__project__img" id="13" onClick={this.switchImages.bind(this)}/>
+                                        <img src={reactImageGallery3} alt="Flickr Gallery project img1" className="workwrap__project__img" id="13" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                 </div>
                                 <div className="workwrap__overview__section">
@@ -158,17 +171,17 @@ export default class Work extends Component {
                             </div>
                             <div className="workwrap__img__section">
                                 <div className="workwrap__bigImg__section">
-                                    <img src={ocrCapstone} alt="OCR with Flickr project main img" className="workwrap__project__main__img"  id="workwrap__project__main__img2"/>
+                                    <img src={capstone1} alt="OCR with Flickr project main img" className="workwrap__project__main__img"  id="workwrap__project__main__img2"/>
                                 </div>
                                 <div className="workwrap__smallImg__section">
                                     <div className="img__column">
-                                        <img src={reactImageGallery} alt="OCR with Flickr project img1" className="workwrap__project__img" id="21"onClick={this.switchImages.bind(this)}/>
+                                        <img src={capstone1} alt="OCR with Flickr project img1" className="workwrap__project__img" id="21"onClick={this.switchImages.bind(this)}/>
                                     </div>
                                     <div className="img__column">
-                                        <img src={virtualAssistant} alt="OCR with Flickr project img1" className="workwrap__project__img" id="22"onClick={this.switchImages.bind(this)}/>
+                                        <img src={capstone2} alt="OCR with Flickr project img1" className="workwrap__project__img" id="22"onClick={this.switchImages.bind(this)}/>
                                     </div>
                                     <div className="img__column">
-                                        <img src={southCanStrength} alt="OCR with Flickr project img1" className="workwrap__project__img" id="23"onClick={this.switchImages.bind(this)}/>
+                                        <img src={capstone3} alt="OCR with Flickr project img1" className="workwrap__project__img" id="23"onClick={this.switchImages.bind(this)}/>
                                     </div>
                                 </div>
                                 <div className="workwrap__overview__section">
@@ -193,17 +206,17 @@ export default class Work extends Component {
                             </div>
                             <div className="workwrap__img__section">
                                 <div className="workwrap__bigImg__section">
-                                    <img src={morningInterface} alt="Morning Interface project main img" className="workwrap__project__main__img"  id="workwrap__project__main__img3"/>
+                                    <img src={morningInterface1} alt="Morning Interface project main img" className="workwrap__project__main__img"  id="workwrap__project__main__img3"/>
                                 </div>
                                 <div className="workwrap__smallImg__section">
                                     <div className="img__column">
-                                        <img src={reactImageGallery} alt="Morning Interface project img1" className="workwrap__project__img" id="31" onClick={this.switchImages.bind(this)}/>
+                                        <img src={morningInterface1} alt="Morning Interface project img1" className="workwrap__project__img" id="31" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                     <div className="img__column">
-                                        <img src={virtualAssistant} alt="Morning Interface project img1" className="workwrap__project__img" id="32" onClick={this.switchImages.bind(this)}/>
+                                        <img src={morningInterface2} alt="Morning Interface project img1" className="workwrap__project__img" id="32" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                     <div className="img__column">
-                                        <img src={southCanStrength} alt="Morning Interface project img1" className="workwrap__project__img" id="33" onClick={this.switchImages.bind(this)}/>
+                                        <img src={morningInterface3} alt="Morning Interface project img1" className="workwrap__project__img" id="33" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                 </div>
                                 <div className="workwrap__overview__section">
@@ -228,17 +241,17 @@ export default class Work extends Component {
                             </div>
                             <div className="workwrap__img__section">
                                 <div className="workwrap__bigImg__section">
-                                    <img src={libraryManager} alt="Library Manager project main img"   className="workwrap__project__main__img"  id="workwrap__project__main__img4"/>
+                                    <img src={libraryManager1} alt="Library Manager project main img"   className="workwrap__project__main__img"  id="workwrap__project__main__img4"/>
                                 </div>
                                 <div className="workwrap__smallImg__section">
                                     <div className="img__column">
-                                        <img src={reactImageGallery} alt="Library Manager project img1" className="workwrap__project__img" id="41" onClick={this.switchImages.bind(this)}/>
+                                        <img src={libraryManager1} alt="Library Manager project img1" className="workwrap__project__img" id="41" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                     <div className="img__column">
-                                        <img src={virtualAssistant} alt="Library Manager project img1" className="workwrap__project__img" id="42" onClick={this.switchImages.bind(this)}/>
+                                        <img src={libraryManager2} alt="Library Manager project img1" className="workwrap__project__img" id="42" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                     <div className="img__column">
-                                        <img src={southCanStrength} alt="Library Manager project img1" className="workwrap__project__img" id="43" onClick={this.switchImages.bind(this)}/>
+                                        <img src={libraryManager3} alt="Library Manager project img1" className="workwrap__project__img" id="43" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                 </div>
                                 <div className="workwrap__overview__section">
@@ -263,17 +276,17 @@ export default class Work extends Component {
                             </div>
                             <div className="workwrap__img__section">
                                 <div className="workwrap__bigImg__section">
-                                    <img src={virtualAssistant} alt="Virtual Assistant project main img" className="workwrap__project__main__img"  id="workwrap__project__main__img5"/>
+                                    <img src={virtualAssistant1} alt="Virtual Assistant project main img" className="workwrap__project__main__img"  id="workwrap__project__main__img5"/>
                                 </div>
                                 <div className="workwrap__smallImg__section">
                                     <div className="img__column">
-                                        <img src={reactImageGallery} alt="Virtual Assistant project img1" className="workwrap__project__img" id="51" onClick={this.switchImages.bind(this)}/>
+                                        <img src={virtualAssistant1} alt="Virtual Assistant project img1" className="workwrap__project__img" id="51" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                     <div className="img__column">
-                                        <img src={virtualAssistant} alt="Virtual Assistant project img1" className="workwrap__project__img" id="52" onClick={this.switchImages.bind(this)}/>
+                                        <img src={virtualAssistant2} alt="Virtual Assistant project img1" className="workwrap__project__img" id="52" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                     <div className="img__column">
-                                        <img src={southCanStrength} alt="Virtual Assistant project img1" className="workwrap__project__img" id="53" onClick={this.switchImages.bind(this)}/>
+                                        <img src={virtualAssistant3} alt="Virtual Assistant project img1" className="workwrap__project__img" id="53" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                 </div>
                                 <div className="workwrap__overview__section">
@@ -298,17 +311,17 @@ export default class Work extends Component {
                             </div>
                             <div className="workwrap__img__section">
                                 <div className="workwrap__bigImg__section">
-                                    <img src={southCanStrength} alt="SouthCanStrength Website main img" className="workwrap__project__main__img"  id="workwrap__project__main__img6"/>
+                                    <img src={southCanStrength1} alt="SouthCanStrength Website main img" className="workwrap__project__main__img"  id="workwrap__project__main__img6"/>
                                 </div>
                                 <div className="workwrap__smallImg__section">
                                     <div className="img__column">
-                                        <img src={reactImageGallery} alt="SouthCanStrength Website project img1" className="workwrap__project__img" id="61" onClick={this.switchImages.bind(this)}/>
+                                        <img src={southCanStrength1} alt="SouthCanStrength Website project img1" className="workwrap__project__img" id="61" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                     <div className="img__column">
-                                        <img src={virtualAssistant} alt="SouthCanStrength Website project img1" className="workwrap__project__img" id="62" onClick={this.switchImages.bind(this)}/>
+                                        <img src={southCanStrength2} alt="SouthCanStrength Website project img1" className="workwrap__project__img" id="62" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                     <div className="img__column">
-                                        <img src={southCanStrength} alt="SouthCanStrength Website project img1" className="workwrap__project__img" id="63" onClick={this.switchImages.bind(this)}/>
+                                        <img src={southCanStrength3} alt="SouthCanStrength Website project img1" className="workwrap__project__img" id="63" onClick={this.switchImages.bind(this)}/>
                                     </div>
                                 </div>
                                 <div className="workwrap__overview__section">

@@ -25,7 +25,7 @@ export default class Contact extends Component{
                 </div>
                 <hr/>
                 
-                <div className="contact__form">
+                <form className="contact__form" method="POST" action="//formspree.io/shehanatuk@gmail.com">
                 <h2 className="contact__form__heading">Contact Me</h2>
                     <div className="contact__details">
                         <label htmlFor="name" className="contact__details__name"><span>Your Name</span>
@@ -44,7 +44,7 @@ export default class Contact extends Component{
                             <input type="submit" value="Send"/>
                     </div>
     
-                </div>
+                </form>
 
             </div>
         );

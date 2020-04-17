@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import detailsIllustration from 'assets/illustrations/details.svg';
-
 export const Wrapper = styled.div`
   background-image: url(${detailsIllustration});
   background-size: contain;
@@ -53,5 +52,6 @@ export const Thumbnail = styled.div`
 
   img {
     width: 100%;
+    border-radius: 50%;
   }
 `;

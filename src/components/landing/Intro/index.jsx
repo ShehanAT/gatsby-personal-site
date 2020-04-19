@@ -4,7 +4,6 @@ import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import dev from 'assets/illustrations/dev.svg';
 import { Wrapper, IntroWrapper, Details, Thumbnail, Links } from './styles';
-// import {  } from "../../theme/Footer/styles"
 import social from '../../theme/Footer/social.json';
 
 export const Intro = () => (

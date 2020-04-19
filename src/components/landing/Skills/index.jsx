@@ -14,7 +14,7 @@ export const Skills = () => (
       <Details>
         <h1>Hi!</h1>
         <p>
-          I'm Shehan Atuk and welcome to my website. I am a web developer, web designer and most importantly, problem solver. I believe in two foundational pillars as a good problem solver: good soft skills and tons of in-the-trenches experience. I have worked with many different clients and I'm sure I can provide value to you too. Checkout my work and feel free to contact me
+          I'm Shehan Atukorala and welcome to my website. I am a web developer, web designer and most importantly, problem solver. I believe in two foundational pillars as a good problem solver: good soft skills and tons of in-the-trenches experience. I have worked with many different clients and I'm sure I can provide value to you too. Checkout my work and feel free to contact me
         </p>
         <Button as={AnchorLink} href="#contact">
           Hire me

@@ -1,24 +1,30 @@
 [
   {
     "id": 0,
-    "name": "Youtube",
-    "link": "https://t.me/smakosh",
-    "icon": "/icons/youtube.png"
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/shehan-atukorala-8631491a5/",
+    "icon": "/icons/linkedin.svg"
   },
   {
     "id": 1,
+    "name": "Youtube",
+    "link": "https://www.youtube.com/channel/UCtxed_NljgtAXrQMMdLvhrQ?view_as=subscriber",
+    "icon": "/icons/youtube.png"
+  },
+  {
+    "id": 2,
     "name": "Github",
     "link": "https://github.com/ShehanAT",
     "icon": "/icons/github-logo.svg"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "StackOverflow",
     "link": "https://stackoverflow.com/users/10871450/flyingfishcattle",
     "icon": "/icons/stack-overflow.svg"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Twitter",
     "link": "https://twitter.com/Shehan_Atuk",
     "icon": "/icons/twitter.png"
